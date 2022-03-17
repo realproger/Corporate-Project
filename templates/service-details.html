@@ -1,0 +1,264 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+<header class="header-page-bg overlay-shape">
+            <div class="header-bottom-shape"></div>
+            <div class="container">
+                <div class="header-page-content">
+                    <small class="line-shape-bg color-white">Cysec</small>
+                    <h1 class="color-white">Service Details</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Choose Strong Passwords</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="service-details-section pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-8">
+                        <div class="service-details-item">
+                            <div class="service-details-thumb">
+                                <img src="assets/images/service-details.jpg" alt="">
+                            </div>
+                            <div class="service-details-content">
+                                
+                                <h3>{{ service.title }}</h3>
+                                <p>{{ service.description }}</p>
+                                <div class="service-details-grid">
+                                    <div class="service-details-grid-item">
+                                        <img src="{{ service.image.url }}" alt="service">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-4 pb-30">
+                        <div class="sidebar-item mb-30">
+                            <div class="sidebar-search">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Search...">
+                                        <button class="btn"><i class="flaticon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sidebar-item mb-30">
+                            <div class="sidebar-title">
+                                <h3>Categories</h3>
+                            </div>
+                            <div class="sidebar-content">
+                                <ul class="sidebar-category">
+                                    <li><a href="#"> Ransomware <span>(22)</span> </a></li>
+                                    <li><a href="#"> Global news <span>(80)</span> </a></li>
+                                    <li><a href="#"> Blockchain <span>(56)</span> </a></li>
+                                    <li><a href="#"> Cybercrime <span>(12)</span> </a></li>
+                                    <li><a href="#"> Whitepapers <span>(45)</span> </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="sidebar-title">
+                                <h3>Tags</h3>
+                            </div>
+                            <div class="sidebar-content">
+                                <ul class="sidebar-tag">
+                                    <li><a href="#"><i class="flaticon-tag"></i> Cyber Security (3) </a></li>
+                                    <li><a href="#"><i class="flaticon-tag"></i> Blockchain (6) </a></li>
+                                    <li><a href="#"><i class="flaticon-tag"></i> Virtual Assistant (3) </a></li>
+                                    <li><a href="#"><i class="flaticon-tag"></i> Whitepapers (2) </a></li>
+                                    <li><a href="#"><i class="flaticon-tag"></i> Trend In Design (54) </a></li>
+                                    <li><a href="#"><i class="flaticon-tag"></i> Digital Learning Inc (23) </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="report-section">
+            <div class="container">
+                <div class="report-box">
+                    <div class="report-box-inner">
+                        <div class="report-box-item report-box-text">
+                            <h3>Get Free Report</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quaerat voluptatem.</p>
+                        </div>
+                        <div class="report-box-item">
+                            <a href="#" class="btn">Download Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-lg bg-black footer-top-shape">
+            <div class="footer-upper-two pt-100 pb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
+                                </div>
+                                <div class="footer-details">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniama met consectetur adipisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="footer-right pl-80">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>Cyber Services</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="ai-platforms.html">Cysec Discovery</a></li>
+                                                <li><a href="ai-platforms.html">Cysec On-Demand</a></li>
+                                                <li><a href="ai-platforms.html">Cysec MobileSuite</a></li>
+                                                <li><a href="ai-platforms.html">Cysec Continous</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>Support & Help</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="contact-us.html">Contact Us</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="blogs-list-with-sidebar.html">Blogs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>Quick Links</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="terms-services.html">Terms Of Services</a></li>
+                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                <li><a href="authentication.html">Authentication</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower bg-off-white">
+                <div class="container">
+                    <div class="footer-lower-grid">
+                        <div class="footer-lower-item footer-lower-info">
+                            <div class="footer-copyright-text">
+                                <p>Copyright ©2021 Design &amp; Developed By <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                            </div>
+                            <div class="footer-lower-action d-flex flex-wrap align-items-baseline">
+                                <ul class="footer-action-list">
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-services.html">Terms Of Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-lower-item">
+                            <ul class="footer-lower-social">
+                                <li>
+                                    <a href="#">
+                                    <i class='bx bxl-facebook-square'></i>
+                                    <span class="social-tooltip">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                    <span class="social-tooltip">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class='bx bxl-linkedin'></i>
+                                    <span class="social-tooltip">Linkedin</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i class='bx bxl-pinterest-alt'></i>
+                                    <span class="social-tooltip">Pinterest</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <span><i class="flaticon-up-arrow"></i></span>
+            </div>
+        </div>
+        <div class="sidebar-modal-wrapper">
+            <div class="sidebar-modal">
+                <div class="sidebar-modal-inner">
+                    <div class="sidebar-modal-header">
+                        <div class="sidebar-modal-logo">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="sidebar-modal-close">
+                            <i class="flaticon-cross-sign"></i>
+                        </div>
+                    </div>
+                    <div class="sidebar-modal-body">
+                        <div class="sidebar-modal-para">
+                            <p>Cysec is a consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="sidebar-modal-content-item">
+                            <h4>Contact Us:</h4>
+                            <div class="contact-grid-para"><i class="flaticon-network"></i>Level 2, 11 York St, Sydney 2000, Australia</div>
+                            <div class="contact-grid-para">
+                                <i class="flaticon-phone-call"></i>
+                                <p>
+                                    <a href="tel:0061-665-66785">+61 665 66785</a><br>
+                                    <a href="tel:0061-567-8907">+61 567 8907</a>
+                                </p>
+                            </div>
+                            <div class="contact-grid-para">
+                                <i class="flaticon-email"></i>
+                                <p>
+                                    <a href="/cdn-cgi/l/email-protection#9ef7f0f8f1acaeacaedefde7edfbfdb0fdf1f3"><span class="__cf_email__" data-cfemail="97fef9f1f8a5a7a5a7d7f4eee4f2f4b9f4f8fa">[email&#160;protected]</span></a><br>
+                                    <a href="/cdn-cgi/l/email-protection#0a797f7a7a65787e4a6973796f6924696567"><span class="__cf_email__" data-cfemail="94e7e1e4e4fbe6e0d4f7ede7f1f7baf7fbf9">[email&#160;protected]</span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sidebar-modal-content-item">
+                            <div class="sidebar-modal-share">
+                                <p>Follow:</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-pinterest-alt"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

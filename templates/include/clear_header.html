@@ -1,0 +1,186 @@
+{% load static %}
+<div class="fixed-top">
+    <div class="navbar-area navbar-area-three">
+        <div class="mobile-nav">
+            <a href="index.html" class="mobile-brand"> <img src="assets/images/logo-white-menu.png" alt="logo" class="logo"> </a>
+            <div class="navbar-option">
+                <div class="navbar-option-item navbar-option-dots dropdown">
+                    <button type="button" id="dot" aria-haspopup="true" aria-expanded="false"> <i class="flaticon-menu-1"></i> </button>
+                    <ul class="dropdown-menu navbar-dots-dropdown">
+                        <li class="dropdown-item">
+                            <div class="navbar-option-item navbar-option-language navbar-option-language-flat dropdown language-option">
+                                <button class="dropdown-toggle" type="button" id="language3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flaticon-worldwide"></i> <span class="lang-name"></span> </button>
+                                <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language3">
+                                    <a class="dropdown-item" href="#"> <img src="assets/images/uk-flat.png" alt="flag"> English </a>
+                                    <a class="dropdown-item" href="#"> <img src="assets/images/germany-flat.png" alt="flag"> Deutsch </a>
+                                    <a class="dropdown-item" href="#"> <img src="assets/images/china-flat.png" alt="flag"> 简体中文 </a>
+                                    <a class="dropdown-item" href="#"> <img src="assets/images/uae-flat.png" alt="flag"> العربيّة </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="navbar-option-item navbar-option-account"> <a href="authentication.html"><i class="flaticon-user"></i></a> </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="navbar-option-item navbar-option-cart"> <a href="cart.html"><i class="flaticon-shopping-bag"></i>
+<span class="option-badge option-badge-danger">2</span>
+</a> </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="navbar-option-item navbar-option-sidebar"> <span><i class="flaticon-menu"></i></span> </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-option-item navbar-option-language navbar-option-language-flat dropdown mobile-hide language-option">
+                    <button class="dropdown-toggle" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flaticon-worldwide"></i> <span class="lang-name"></span> </button>
+                    <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1">
+                        <a class="dropdown-item" href="#"> <img src="assets/images/uk-flat.png" alt="flag"> English </a>
+                        <a class="dropdown-item" href="#"> <img src="assets/images/germany-flat.png" alt="flag"> Deutsch </a>
+                        <a class="dropdown-item" href="#"> <img src="assets/images/china-flat.png" alt="flag"> 简体中文 </a>
+                        <a class="dropdown-item" href="#"> <img src="assets/images/uae-flat.png" alt="flag"> العربيّة </a>
+                    </div>
+                </div>
+                <div class="navbar-option-item navbar-option-search dropdown">
+                    <button type="button" id="search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flaticon-search"></i> </button>
+                    <div class="dropdown-menu" aria-labelledby="search">
+                        <form>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"> <i class="flaticon-search"></i> </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search result"> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="navbar-option-item navbar-option-account mobile-hide"> <a href="authentication.html"><i class="flaticon-user"></i></a> </div>
+                <div class="navbar-option-item navbar-option-cart mobile-hide"> <a href="cart.html"><i class="flaticon-shopping-bag"></i>
+<span class="option-badge option-badge-danger">2</span>
+</a> </div>
+                <div class="navbar-option-item navbar-option-sidebar mobile-hide"> <span><i class="flaticon-menu"></i></span> </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html"> <img src="{{ homes.logo.url }}" alt="logo" class="logo"> </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Home</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item  nav-item-1"> <a href="index.html" class="nav-link">Homepage 1</a> </li>
+                                    <li class="nav-item  nav-item-2"> <a href="index-2.html" class="nav-link">Homepage 2</a> </li>
+                                    <li class="nav-item  nav-item-3"> <a href="index-3.html" class="nav-link">Homepage 3</a> </li>
+                                    <li class="nav-item  nav-item-4"> <a href="index-4.html" class="nav-link">Homepage 4</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"> <a href="about-us.html" class="nav-link">About Us</a> </li>
+                                    <li class="nav-item"> <a href="faqs.html" class="nav-link">FAQ's</a> </li>
+                                    <li class="nav-item"> <a href="testimonials.html" class="nav-link">Testimonials</a> </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Team</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"> <a href="our-teams.html" class="nav-link">Our Teams</a> </li>
+                                            <li class="nav-item"> <a href="team-details.html" class="nav-link">Team Details</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Event</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"> <a href="event-landing-page.html" class="nav-link">Event Landing Page</a> </li>
+                                            <li class="nav-item"> <a href="all-events.html" class="nav-link">All Events</a> </li>
+                                            <li class="nav-item"> <a href="event-category.html" class="nav-link">Event Category</a> </li>
+                                            <li class="nav-item"> <a href="event-details.html" class="nav-link">Event Details</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Company</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"> <a href="ai-platforms.html" class="nav-link">AI Platform</a> </li>
+                                            <li class="nav-item"> <a href="compliance.html" class="nav-link">Compliance</a> </li>
+                                            <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Partner</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item"> <a href="partner-directory.html" class="nav-link">Partner Directory</a> </li>
+                                                    <li class="nav-item"> <a href="become-a-partner.html" class="nav-link">Become A Partner</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item"> <a href="ratings.html" class="nav-link">Ratings</a> </li>
+                                            <li class="nav-item"> <a href="career.html" class="nav-link">Career</a> </li>
+                                            <li class="nav-item"> <a href="presale-service.html" class="nav-link">Presale Service</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Shop</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"> <a href="shops-grid.html" class="nav-link">Shops Grid</a> </li>
+                                            <li class="nav-item"> <a href="shops-list.html" class="nav-link">Shops List</a> </li>
+                                            <li class="nav-item"> <a href="shop-details.html" class="nav-link">Shop Details</a> </li>
+                                            <li class="nav-item"> <a href="cart.html" class="nav-link">Cart</a> </li>
+                                            <li class="nav-item"> <a href="checkout.html" class="nav-link">Checkout</a> </li>
+                                            <li class="nav-item"> <a href="my-account.html" class="nav-link">My Account</a> </li>
+                                            <li class="nav-item"> <a href="my-orders.html" class="nav-link">My Orders</a> </li>
+                                            <li class="nav-item"> <a href="my-addresses.html" class="nav-link">My Addresses</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Account</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"> <a href="authentication.html" class="nav-link">Authentication</a> </li>
+                                            <li class="nav-item"> <a href="forget-password.html" class="nav-link">Forget Password</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Others</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"> <a href="pricing.html" class="nav-link">Pricing</a> </li>
+                                            <li class="nav-item"> <a href="terms-services.html" class="nav-link">Terms Of Services</a> </li>
+                                            <li class="nav-item"> <a href="privacy-policy.html" class="nav-link">Privacy Policy</a> </li>
+                                            <li class="nav-item"> <a href="coming-soon.html" class="nav-link">Coming Soon</a> </li>
+                                            <li class="nav-item"> <a href="search-page.html" class="nav-link">Search Page</a> </li>
+                                            <li class="nav-item"> <a href="404.html" class="nav-link">404 Error Page</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle active">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"> <a href="services.html" class="nav-link active">Services</a> </li>
+                                    <li class="nav-item"> <a href="service-details.html" class="nav-link">Service Details</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a href="#" class="nav-link dropdown-toggle">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"> <a href="blogs-grid-without-sidebar.html" class="nav-link">Blogs Grid </a> </li>
+                                    <li class="nav-item"> <a href="blogs-3.html" class="nav-link">Blogs Grid 2 </a> </li>
+                                    <li class="nav-item"> <a href="blogs-list-with-sidebar.html" class="nav-link">Blogs List </a> </li>
+                                    <li class="nav-item"> <a href="blog-details.html" class="nav-link">Blog Details</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a href="contact-us.html" class="nav-link">Contact Us</a> </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-option">
+                        <div class="navbar-option-item navbar-option-language navbar-option-language-flat dropdown language-option">
+                            <button class="dropdown-toggle" type="button" id="language3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flaticon-worldwide"></i> <span class="lang-name"></span> </button>
+                            <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language3">
+                                <a class="dropdown-item" href="#"> <img src="assets/images/uk-flat.png" alt="flag"> English </a>
+                                <a class="dropdown-item" href="#"> <img src="assets/images/germany-flat.png" alt="flag"> Deutsch </a>
+                                <a class="dropdown-item" href="#"> <img src="assets/images/china-flat.png" alt="flag"> 简体中文 </a>
+                                <a class="dropdown-item" href="#"> <img src="assets/images/uae-flat.png" alt="flag"> العربيّة </a>
+                            </div>
+                        </div>
+                        <div class="navbar-option-item navbar-option-search">
+                            <form>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"> <i class="flaticon-search"></i> </div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search result"> </div>
+                            </form>
+                        </div>
+                        <div class="navbar-option-item navbar-option-account"> <a href="authentication.html"><i class="flaticon-user"></i></a> </div>
+                        <div class="navbar-option-item navbar-option-cart"> <a href="cart.html"><i class="flaticon-shopping-bag"></i>
+<span class="option-badge option-badge-danger">2</span>
+</a> </div>
+                        <div class="navbar-option-item navbar-option-sidebar"> <span><i class="flaticon-menu"></i></span> </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

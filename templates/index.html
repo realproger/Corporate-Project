@@ -1,0 +1,648 @@
+{% extends 'homepage.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'include/header.html' %}
+
+<header class="header-banner-two header-two">
+    <div class="header-shape">
+        <div class="header-shape-item">
+            <img src="{% static 'assets/images/circle-1.png' %}" alt="shape">
+        </div>
+        <div class="header-shape-item">
+            <img src="{% static 'assets/images/header-square-shape.png' %}" alt="shape">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="header-content header-content-full">
+                    <small class="line-shape-bg">Cyber Solution</small>
+                    <h1>{{ homes.title }}</h1>
+                    <p>{{ homes.description }}</p>
+                    <div class="header-button">
+                        <a href="#" class="btn">Узнайте больше <i class="flaticon-right-arrow-4"></i></a>
+                        <a href="#" class="btn btn-border">Получить предложениеX <i class="flaticon-right-arrow-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="header-content-image text-center text-lg-start">
+                    <img src="{% static 'assets/images/header-shape-image.png' %}" alt="header">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="service-section pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 pb-30">
+                <div class="service-box">
+                    <div class="service-box-inner">
+                        <div class="service-box-icon">
+                            <i class="flaticon-design"></i>
+                        </div>
+                        <div class="service-box-text">
+                            <h3>Software Upgration</h3>
+                            <p>Tur adipisicing elit sed deimod magna aliqua Ut enim urdisiing elit sedo eiusmoad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 pb-30">
+                <div class="service-box">
+                    <div class="service-box-inner">
+                        <div class="service-box-icon">
+                            <i class="flaticon-antivirus"></i>
+                        </div>
+                        <div class="service-box-text">
+                            <h3>Use Antivirus Software</h3>
+                            <p>Tur adipisicing elit sed deimod magna aliqua Ut enim urdisiing elit sedo eiusmoad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 pb-30">
+                <div class="service-box">
+                    <div class="service-box-inner">
+                        <div class="service-box-icon">
+                            <i class="flaticon-virus-warning"></i>
+                        </div>
+                        <div class="service-box-text">
+                            <h3>Identifying Threats</h3>
+                            <p>Tur adipisicing elit sed deimod magna aliqua Ut enim urdisiing elit sedo eiusmoad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 pb-30">
+                <div class="service-box">
+                    <div class="service-box-inner">
+                        <div class="service-box-icon">
+                            <i class="flaticon-website"></i>
+                        </div>
+                        <div class="service-box-text">
+                            <h3>Check Website Url</h3>
+                            <p>Tur adipisicing elit sed deimod magna aliqua Ut enim urdisiing elit sedo eiusmoad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="about-section pb-70 about-bg-shape">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-lg-6 pb-30">
+                <div class="about-item-image text-center">
+                    <img src="{% static 'assets/images/about-image-three.png' %}" alt="about">
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="max-585 mx-auto mx-lg-0">
+                    <div class="about-item-text">
+                        <div class="section-title section-title-left text-start">
+                            <small>About Cysec</small>
+                            <h2>Our Approach Is Simple But Not <span>Time-Wasting</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamamet, consectetur adipisi</p>
+                        </div>
+                        <div class="counter-item-content about-section-counter">
+                            <div class="counter-content-list">
+                                <div class="counter-content-thumb">
+                                    <i class="flaticon-secure"></i>
+                                </div>
+                                <div class="counter-content-text">
+                                    <h3 class="color-main"><span class="counter">{{ service_count.all.count}}</span> <sup>+</sup></h3>
+                                    <p>Cybersecurity Projects</p>
+                                </div>
+                            </div>
+                            <div class="counter-content-list">
+                                <div class="counter-content-thumb">
+                                    <i class="flaticon-customer"></i>
+                                </div>
+                                <div class="counter-content-text">
+                                    <h3 class="color-main"><span class="counter">{{ teams.all.count }}</span> <sup>+</sup></h3>
+                                    <p>Customers Served Globally</p>
+                                </div>
+                            </div>
+                            <div class="counter-content-list">
+                                <div class="counter-content-thumb">
+                                    <i class="flaticon-read"></i>
+                                </div>
+                                <div class="counter-content-text">
+                                    <h3 class="color-main"><span class="counter">{{ contacts.all.count }}</span> <sup>+</sup></h3>
+                                    <p>Cybersecurity Experts</p>
+                                </div>
+                            </div>
+                            <div class="counter-content-list">
+                                <div class="counter-content-thumb">
+                                    <i class="flaticon-star"></i>
+                                </div>
+                                <div class="counter-content-text">
+                                    <h3 class="color-main"><span class="counter">{{ partners.all.count }}</span> <sup>%</sup></h3>
+                                    <p>Partners</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="quality-section pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 pb-30">
+                <div class="quality-card quality-card-red">
+                    <div class="quality-card-icon">
+                        <i class="flaticon-consultant"></i>
+                    </div>
+                    <div class="quality-card-content">
+                        <h4>01</h4>
+                        <h3>Product Consultation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur sequi nesciunt. Neque porro quisquam estet dolore magnam aliquauptatem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pb-30">
+                <div class="quality-card quality-card-blue">
+                    <div class="quality-card-icon">
+                        <i class="flaticon-shield"></i>
+                    </div>
+                    <div class="quality-card-content">
+                        <h4>02</h4>
+                        <h3>Security Consultation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur sequi nesciunt. Neque porro quisquam estet dolore magnam aliquauptatem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-0 pb-30">
+                <div class="quality-card quality-card-green">
+                    <div class="quality-card-icon">
+                        <i class="flaticon-customer-service"></i>
+                    </div>
+                    <div class="quality-card-content">
+                        <h4>03</h4>
+                        <h3>24/7 Technical Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur sequi nesciunt. Neque porro quisquam estet dolore magnam aliquauptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="partner-section p-tb-100 bg-off-white">
+    <div class="container">
+        <div class="section-title">
+            <small>Партнеры</small>
+            <h2>Мы работаем с</h2>
+        </div>
+        <div class="partner-carousel default-carousel owl-carousel owl-theme">
+            {% for partner in partners %}
+            <div class="item">
+                <div class="partner-thumb">
+                    <a href="#">
+                    <img src="{{ partner.image.url }}" alt="partner">
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="service-section p-tb-100">
+    <div class="container">
+        <div class="section-title section-title-lg">
+            <small>Cybersecurity Services</small>
+            <h2>Cyber Security Solutions & Technology Aid <span>Entire Solution</span></h2>
+        </div>
+        <div class="service-item-grid d-flex flex-wrap">
+            <div class="service-item-list service-box-two">
+                <div class="service-box-icon">
+                    <i class="flaticon-password"></i>
+                </div>
+                <div class="service-box-text">
+                    <h3>Choose Strong Passwords</h3>
+                    <p>Lorem ipsum dolor amet consectetur adiising eli sed do eiusmod tempor incididunt ut labore et dolore magna aliquaqem</p>
+                    <p><a href="service-details.html" class="redirect-link">Learn More <i class="flaticon-right-arrow-2"></i></a></p>
+                </div>
+            </div>
+            <div class="service-item-list service-box-two">
+                <div class="service-box-icon">
+                    <i class="flaticon-bug"></i>
+                </div>
+                <div class="service-box-text">
+                    <h3>Update Your Antivirus</h3>
+                    <p>Lorem ipsum dolor amet consectetur adiising eli sed do eiusmod tempor incididunt ut labore et dolore magna aliquaqem</p>
+                    <p><a href="service-details.html" class="redirect-link">Learn More <i class="flaticon-right-arrow-2"></i></a></p>
+                </div>
+            </div>
+            <div class="service-item-list service-box-two">
+                <div class="service-box-icon">
+                    <i class="flaticon-sign-out"></i>
+                </div>
+                <div class="service-box-text">
+                    <h3>Remember To Log Off</h3>
+                    <p>Lorem ipsum dolor amet consectetur adiising eli sed do eiusmod tempor incididunt ut labore et dolore magna aliquaqem</p>
+                    <p><a href="service-details.html" class="redirect-link">Learn More <i class="flaticon-right-arrow-2"></i></a></p>
+                </div>
+            </div>
+            <div class="service-item-list service-box-two">
+                <div class="service-box-icon">
+                    <i class="flaticon-network"></i>
+                </div>
+                <div class="service-box-text">
+                    <h3>Safety In Trusted Websites</h3>
+                    <p>Lorem ipsum dolor amet consectetur adiising eli sed do eiusmod tempor incididunt ut labore et dolore magna aliquaqem</p>
+                    <p><a href="service-details.html" class="redirect-link">Learn More <i class="flaticon-right-arrow-2"></i></a></p>
+                </div>
+            </div>
+            <div class="service-item-list service-box-two">
+                <div class="service-box-icon">
+                    <i class="flaticon-email-2"></i>
+                </div>
+                <div class="service-box-text">
+                    <h3>Check Emails Before Opening </h3>
+                    <p>Lorem ipsum dolor amet consectetur adiising eli sed do eiusmod tempor incididunt ut labore et dolore magna aliquaqem</p>
+                    <p><a href="service-details.html" class="redirect-link">Learn More <i class="flaticon-right-arrow-2"></i></a></p>
+                </div>
+            </div>
+            <div class="service-item-list service-box-two">
+                <div class="service-box-icon">
+                    <i class="flaticon-broken-link"></i>
+                </div>
+                <div class="service-box-text">
+                    <h3>Check Website Url</h3>
+                    <p>Lorem ipsum dolor amet consectetur adiising eli sed do eiusmod tempor incididunt ut labore et dolore magna aliquaqem</p>
+                    <p><a href="service-details.html" class="redirect-link">Learn More <i class="flaticon-right-arrow-2"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-section pb-70 bg-shape-right-top">
+    <div class="container-fluid">
+        <div class="row align-items-end">
+            <div class="col-12 col-lg-7">
+                <div class="max-790 desk-ml-auto">
+                    <div class="about-item-text">
+                        <div class="section-title section-title-left text-start">
+                            <small>About Cysec</small>
+                            <h2>Protect Your Website Web Server Ect From <span>Hacker Threats</span></h2>
+                        </div>
+                        <div class="about-content-list-two">
+                            <div class="about-list-item-two">
+                                <div class="about-list-item-selector about-list-item-selector-small">
+                                    <i class="flaticon-check-1"></i>
+                                </div>
+                                <div class="about-list-item-text">
+                                    <h3>Identifying Threats</h3>
+                                    <p>Lorem ipsum dolor sit ameconsectetur adipied t laboresectetur adipisitetur adipied </p>
+                                </div>
+                            </div>
+                            <div class="about-list-item-two">
+                                <div class="about-list-item-selector about-list-item-selector-small">
+                                    <i class="flaticon-check-1"></i>
+                                </div>
+                                <div class="about-list-item-text">
+                                    <h3>Server Security</h3>
+                                    <p>Lorem ipsum dolor sit ameconsectetur adipied t laboresectetur adipisitetur adipied</p>
+                                </div>
+                            </div>
+                            <div class="about-list-item-two">
+                                <div class="about-list-item-selector about-list-item-selector-small">
+                                    <i class="flaticon-check-1"></i>
+                                </div>
+                                <div class="about-list-item-text">
+                                    <h3>Web Security</h3>
+                                    <p>Lorem ipsum dolor sit ameconsectetur adipied t laboresectetur adipisitetur adipied</p>
+                                </div>
+                            </div>
+                            <div class="about-list-item-two">
+                                <div class="about-list-item-selector about-list-item-selector-small">
+                                    <i class="flaticon-check-1"></i>
+                                </div>
+                                <div class="about-list-item-text">
+                                    <h3>Database Security</h3>
+                                    <p>Lorem ipsum dolor sit ameconsectetur adipied t laboresectetur adipisitetur adipied</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 pb-30">
+                <div class="about-item-image text-center">
+                    <img src="{% static 'assets/images/about-image-four.png' %}" alt="about">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pricing-section pt-100 pb-70 bg-off-white">
+    <div class="container">
+        <div class="section-title section-title-lg">
+            <small>Услуги кибербезопасности</small>
+            <h2> Тарифные <span>Планы</span></h2>
+        </div>
+        <div class="row">
+           {% for price in prices %}
+            <div class="col-12 col-md-6 col-lg-4 pb-30">
+                <div class="pricing-item text-center">
+                    <div class="pricing-item-inner">
+                        <h3>{{ price.title_tarif }}</h3>
+                        <div class="pricing-info">
+                            <h4 class="pricing-info-title">{{ price.price_tarif }}</h4>
+                        </div>
+                        <ul class="pricing-list">
+                            <li>{{ price.description|safe }}</li>
+                        </ul>
+                        <div class="pricing-button">
+                            <a href="#" class="btn btn-border">Купить сейчас</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="team-section p-tb-100">
+    <div class="container">
+        <div class="section-title section-title-lg">
+            <small>Члены команды</small>
+            <h2>Наша профессиональная команда <span>Участники помогут вам</span></h2>
+        </div>
+        <div class="team-carousel default-carousel owl-carousel owl-theme">
+            {% for team in teams %}
+            <div class="item">
+                <div class="team-card team-card-two">
+                    <div class="team-card-image">
+                        <img src="{{ team.image.url }}" alt="member">
+                    </div>
+                    <div class="team-card-content">
+                        <h3><a href="team-details.html">{{ team.name }}</a></h3>
+                        <h4>{{ team.position }}</h4>
+                        <ul class="social-list">
+                            <li class="facebook-bg"><a href="{{ team.facebook }}"><i class="flaticon-facebook-1"></i></a></li>
+                            <li class="twitter-bg"><a href="{{ team.twitter }}"><i class="flaticon-twitter"></i></a></li>
+                            <li class="linkedin-bg"><a href="{{ team.linkedin }}"><i class="flaticon-linkedin"></i></a></li>
+                            <li class="instagram-bg"><a href="{{ team.instagram }}"><i class="flaticon-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="faq-section pt-100 bg-off-white overflow-hidden">
+    <div class="container-fluid">
+        <div class="row align-items-end">
+            <div class="col-12 order-2 order-lg-1 col-lg-5">
+                <div class="faq-item-image text-center">
+                    <img src="{% static 'assets/images/faq-image.png' %}" alt="about">
+                    <div class="faq-item-shape">
+                        <div class="faq-shape-image">
+                            <img src="{% static 'assets/images/faq-shape-1.png' %}" alt="shape">
+                        </div>
+                        <div class="faq-shape-image">
+                            <img src="{% static 'assets/images/faq-shape-2.png' %}" alt="shape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 order-1 order-lg-2 col-lg-7 pb-80 mobile-pb-0">
+                <div class="max-790">
+                    <div class="section-title section-title-left text-start">
+                        <small>Основные вопросы</small>
+                        <h2>Часто задаваемые вопросы <span>Вопросы</span></h2>
+                    </div>
+                    <div class="faq-content">
+                        {% for faq in faqs %}
+                        <div class="faq-accordion-item faq-accordion-item-active">
+                            <div class="faq-accordion-thumb">
+                                <i class="flaticon-question"></i>
+                            </div>
+                            <div class="faq-accordion-content">
+                                <div class="faq-accordion-header">
+                                    <h3 class="faq-accordion-title">{{ faq.question }}</h3>
+                                </div>
+                                <div class="faq-accordion-body">
+                                    <div class="faq-accordion-body-inner">
+                                        <p class="faq-accordion-para"><faq class="answer"></faq>{{ faq.answer }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-section pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <small>Услуги кибербезопасности</small>
+            <h2>Наши последние <span>Услуги</span></h2>
+        </div>
+        <div class="row">
+           {% for ser in services %}
+            <div class="col-12 col-md-6 col-lg-4 pb-30">
+                <div class="blog-card-two">
+                    <div class="blog-card-entry">
+                        {{ser.date}}
+                    </div>
+                    <div class="blog-card-inner">
+                        <div class="blog-card-content">
+                            <h3><a href="blog-details.html">
+                                {{ser.title}}
+                            </a></h3>
+                            <p>{{ser.description|truncatewords:20}}</p>
+                        </div>
+                        <div class="blog-card-thumb">
+                            <a href="blog-details.html">
+                                <img src="{{ser.image.url}}" alt="blog">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-upper pt-100 pb-80 bg-off-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="footer-content-item">
+                        <div class="footer-logo">
+                            {% if homes.logo %}
+                            <a href="index.html"><img src="{{homes.logo.url}}" alt="logo"></a>
+                            {% else %}
+                            <a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt="logo"></a>
+                            {% endif %}
+                        </div>
+                        <div class="footer-details">
+                            <p>{{ homes.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <div class="footer-right pl-80">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="footer-content-list footer-content-item">
+                                    <div class="footer-content-title">
+                                        <h3>Cyber Services</h3>
+                                    </div>
+                                    <ul class="footer-details footer-list">
+                                        <li><a href="ai-platforms.html">Cysec Discovery</a></li>
+                                        <li><a href="ai-platforms.html">Cysec On-Demand</a></li>
+                                        <li><a href="ai-platforms.html">Cysec MobileSuite</a></li>
+                                        <li><a href="ai-platforms.html">Cysec Continous</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="footer-content-list footer-content-item">
+                                    <div class="footer-content-title">
+                                        <h3>Support & Help</h3>
+                                    </div>
+                                    <ul class="footer-details footer-list">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="pricing.html">Pricing</a></li>
+                                        <li><a href="blogs-list-with-sidebar.html">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                <div class="footer-content-list footer-content-item">
+                                    <div class="footer-content-title">
+                                        <h3>Quick Links</h3>
+                                    </div>
+                                    <ul class="footer-details footer-list">
+                                        <li><a href="terms-services.html">Terms Of Services</a></li>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                        <li><a href="authentication.html">Authentication</a></li>
+                                        <li><a href="pricing.html">Pricing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-lower bg-blue">
+        <div class="container">
+            <div class="footer-lower-grid">
+                <div class="footer-lower-item footer-lower-info">
+                    <div class="footer-copyright-text">
+                        <p>Copyright ©2021 Design &amp; Developed By <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                    </div>
+                    <div class="footer-lower-action d-flex flex-wrap align-items-baseline">
+                        <ul class="footer-action-list footer-action-list-white">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-services.html">Terms Of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-lower-item">
+                    <ul class="footer-lower-social">
+                        <li>
+                            <a href="#">
+                            <i class='bx bxl-facebook-square'></i>
+                            <span class="social-tooltip">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class='bx bxl-twitter'></i>
+                            <span class="social-tooltip">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class='bx bxl-linkedin'></i>
+                            <span class="social-tooltip">Linkedin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class='bx bxl-pinterest-alt'></i>
+                            <span class="social-tooltip">Pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="scroll-top" id="scrolltop">
+    <div class="scroll-top-inner">
+        <span><i class="flaticon-up-arrow"></i></span>
+    </div>
+</div>
+<div class="sidebar-modal-wrapper">
+    <div class="sidebar-modal">
+        <div class="sidebar-modal-inner">
+            <div class="sidebar-modal-header">
+                <div class="sidebar-modal-logo">
+                    <img src="{% static 'assets/images/logo.png' %}" alt="logo">
+                </div>
+                <div class="sidebar-modal-close">
+                    <i class="flaticon-cross-sign"></i>
+                </div>
+            </div>
+            <div class="sidebar-modal-body">
+                <div class="sidebar-modal-para">
+                    <p>Cysec is a consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="sidebar-modal-content-item">
+                    <h4>Contact Us:</h4>
+                    <div class="contact-grid-para"><i class="flaticon-network"></i>Level 2, 11 York St, Sydney 2000, Australia</div>
+                    <div class="contact-grid-para">
+                        <i class="flaticon-phone-call"></i>
+                        <p>
+                            <a href="tel:0061-665-66785">+61 665 66785</a><br>
+                            <a href="tel:0061-567-8907">+61 567 8907</a>
+                        </p>
+                    </div>
+                    <div class="contact-grid-para">
+                        <i class="flaticon-email"></i>
+                        <p>
+                            <a href="/cdn-cgi/l/email-protection#630a0d050c5153515323001a1006004d000c0e"><span class="__cf_email__" data-cfemail="c5acaba3aaf7f5f7f585a6bcb6a0a6eba6aaa8">[email&#160;protected]</span></a><br>
+                            <a href="/cdn-cgi/l/email-protection#295a5c5959465b5d694a505a4c4a074a4644"><span class="__cf_email__" data-cfemail="aad9dfdadac5d8deeac9d3d9cfc984c9c5c7">[email&#160;protected]</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="sidebar-modal-content-item">
+                    <div class="sidebar-modal-share">
+                        <p>Follow:</p>
+                        <ul class="social-list">
+                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                            <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bx bxl-pinterest-alt"></i></a></li>
+                            <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

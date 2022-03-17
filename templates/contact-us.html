@@ -1,0 +1,246 @@
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+        <header class="header-page-bg overlay-shape">
+            <div class="header-bottom-shape"></div>
+            <div class="container">
+                <div class="header-page-content">
+                    <small class="line-shape-bg color-white">Cysec</small>
+                    <h1 class="color-white">Contact Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="contact-us-section pt-100 pb-70">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 pb-30">
+                        <div class="contact-us-item contact-us-image text-center"> <img src="assets/images/contact-us-image.jpg" alt="image"> </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pb-30">
+                        <div class="contact-us-item max-585 mx-auto mx-lg-0">
+                            <div class="sub-section-title">
+                                <h3>Leave A Message</h3>
+                                <p>No more than 2 working days since receiving your issue ticket.</p>
+                            </div>
+                            <form method="POST" enctype=multipart/form-data>
+                                <!-- Security token -->
+                                {% csrf_token %}
+                            
+                                <!-- Using formset -->
+                                {{ form.as_p }}
+                            
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="contact-grid-section pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-30">
+                        <div class="contact-grid-box">
+                            <div class="contact-grid-thumb"> <img src="assets/images/contact-grid-1.jpg" alt="contact"> </div>
+                            <div class="contact-grid-content">
+                                <h3>Location Here</h3>
+                                <div class="contact-grid-para"><i class="flaticon-network"></i>Level 2, 11 York St, Sydney 2000, Australia</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-30">
+                        <div class="contact-grid-box">
+                            <div class="contact-grid-thumb"> <img src="assets/images/contact-grid-2.jpg" alt="contact"> </div>
+                            <div class="contact-grid-content">
+                                <h3>Call Here</h3>
+                                <div class="contact-grid-para">
+                                    <i class="flaticon-phone-call"></i>
+                                    <p> <a href="tel:0061-665-66785">+61 665 66785</a>
+                                        <br> <a href="tel:0061-567-8907">+61 567 8907</a> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-30 offset-md-3 offset-lg-0">
+                        <div class="contact-grid-box">
+                            <div class="contact-grid-thumb"> <img src="assets/images/contact-grid-3.jpg" alt="contact"> </div>
+                            <div class="contact-grid-content">
+                                <h3>Email Here</h3>
+                                <div class="contact-grid-para">
+                                    <i class="flaticon-email"></i>
+                                    <p> <a href="/cdn-cgi/l/email-protection#8ae3e4ece5b8bab8bacae9f3f9efe9a4e9e5e7"><span class="__cf_email__" data-cfemail="6801060e075a585a58280b111b0d0b460b0705">[email&#160;protected]</span></a>
+                                        <br> <a href="/cdn-cgi/l/email-protection#45363035352a373105263c3620266b262a28"><span class="__cf_email__" data-cfemail="85f6f0f5f5eaf7f1c5e6fcf6e0e6abe6eae8">[email&#160;protected]</span></a> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="report-section">
+            <div class="container">
+                <div class="report-box">
+                    <div class="report-box-inner">
+                        <div class="report-box-item report-box-text">
+                            <h3>Get Free Report</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore quaerat voluptatem.</p>
+                        </div>
+                        <div class="report-box-item"> <a href="#" class="btn">Download Report</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-lg bg-black footer-top-shape">
+            <div class="footer-upper-two pt-100 pb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="footer-content-item">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
+                                </div>
+                                <div class="footer-details">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniama met consectetur adipisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="footer-right pl-80">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>Cyber Services</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="ai-platforms.html">Cysec Discovery</a></li>
+                                                <li><a href="ai-platforms.html">Cysec On-Demand</a></li>
+                                                <li><a href="ai-platforms.html">Cysec MobileSuite</a></li>
+                                                <li><a href="ai-platforms.html">Cysec Continous</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>Support & Help</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="contact-us.html">Contact Us</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="blogs-list-with-sidebar.html">Blogs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <div class="footer-content-list footer-content-item">
+                                            <div class="footer-content-title">
+                                                <h3>Quick Links</h3>
+                                            </div>
+                                            <ul class="footer-details footer-list">
+                                                <li><a href="terms-services.html">Terms Of Services</a></li>
+                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                <li><a href="authentication.html">Authentication</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower bg-off-white">
+                <div class="container">
+                    <div class="footer-lower-grid">
+                        <div class="footer-lower-item footer-lower-info">
+                            <div class="footer-copyright-text">
+                                <p>Copyright ©2021 Design &amp; Developed By <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                            </div>
+                            <div class="footer-lower-action d-flex flex-wrap align-items-baseline">
+                                <ul class="footer-action-list">
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-services.html">Terms Of Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-lower-item">
+                            <ul class="footer-lower-social">
+                                <li>
+                                    <a href="#"> <i class='bx bxl-facebook-square'></i> <span class="social-tooltip">Facebook</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class='bx bxl-twitter'></i> <span class="social-tooltip">Twitter</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class='bx bxl-linkedin'></i> <span class="social-tooltip">Linkedin</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class='bx bxl-pinterest-alt'></i> <span class="social-tooltip">Pinterest</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner"> <span><i class="flaticon-up-arrow"></i></span> </div>
+        </div>
+        <div class="sidebar-modal-wrapper">
+            <div class="sidebar-modal">
+                <div class="sidebar-modal-inner">
+                    <div class="sidebar-modal-header">
+                        <div class="sidebar-modal-logo"> <img src="assets/images/logo.png" alt="logo"> </div>
+                        <div class="sidebar-modal-close"> <i class="flaticon-cross-sign"></i> </div>
+                    </div>
+                    <div class="sidebar-modal-body">
+                        <div class="sidebar-modal-para">
+                            <p>Cysec is a consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="sidebar-modal-content-item">
+                            <h4>Contact Us:</h4>
+                            <div class="contact-grid-para"><i class="flaticon-network"></i>Level 2, 11 York St, Sydney 2000, Australia</div>
+                            <div class="contact-grid-para">
+                                <i class="flaticon-phone-call"></i>
+                                <p> <a href="tel:0061-665-66785">+61 665 66785</a>
+                                    <br> <a href="tel:0061-567-8907">+61 567 8907</a> 
+                                </p>
+                            </div>
+                            <div class="contact-grid-para">
+                                <i class="flaticon-email"></i>
+                                <p> <a href="/cdn-cgi/l/email-protection#adc4c3cbc29f9d9f9dedced4dec8ce83cec2c0"><span class="__cf_email__" data-cfemail="1b72757d74292b292b5b7862687e7835787476">[email&#160;protected]</span></a>
+                                    <br> <a href="/cdn-cgi/l/email-protection#3d4e484d4d524f497d5e444e585e135e5250"><span class="__cf_email__" data-cfemail="592a2c2929362b2d193a202a3c3a773a3634">[email&#160;protected]</span></a> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sidebar-modal-content-item">
+                            <div class="sidebar-modal-share">
+                                <p>Follow:</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-pinterest-alt"></i></a></li>
+                                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+
